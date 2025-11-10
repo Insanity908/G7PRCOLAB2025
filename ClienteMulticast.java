@@ -26,7 +26,7 @@ public class ClienteMulticast {
         DatagramPacket pacote = new DatagramPacket(buffer, buffer.length);
 
         // Bloqueia a execução até que um pacote seja recebido
-        socket.receive(pacote);/
+        socket.receive(pacote);
 
         // Converte o conteúdo do pacote de bytes para String legível
         String msg = new String(pacote.getData(), 0, pacote.getLength());
